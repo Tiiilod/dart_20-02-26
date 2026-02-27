@@ -6,21 +6,17 @@ abstract class Penumpang {
 
   String get nama => _nama;
 
-  set nama(String value) {
+  set nama (String value) {
     if (value.isNotEmpty) {
       _nama = value;
-    } else {
-      print("Nama tidak boleh kosong");
     }
-  }
+  } 
 
   String get rute => _rute;
-  
-  set rute(String value) {
+
+  set rute (String value) {
     if (value.isNotEmpty) {
       _rute = value;
-    } else {
-      print("Rute tidak boleh kosong");
     }
   }
 
@@ -28,11 +24,10 @@ abstract class Penumpang {
     return "Rp ${harga.toString()}";
   }
 
-
-    void cetakInfo() {
-    print("Nama Penumpang : $_nama");
-    print("Rute : $_rute");
+  void cetakInfo() {
+    print("Nama Penumpang : $nama");
+    print("Rute : $rute");
   }
 
-  int Harga();
+  int hitungHarga();
 }

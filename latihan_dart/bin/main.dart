@@ -1,23 +1,23 @@
 // ----------------------------------- miniProject 1 -------------------------------------------
 
-import 'miniProject1/buku_perpustakaan.dart';
+// import 'miniProject1/buku_perpustakaan.dart';
 
-void main() {
+// void main() {
 
-  BukuPerpustakaan buku = BukuPerpustakaan();
+//   BukuPerpustakaan buku = BukuPerpustakaan();
 
-  buku.setJudul("Matematika");
-  buku.setStok(2);
+//   buku.setJudul("Matematika");
+//   buku.setStok(2);
 
-  print("====== buku perpustakaan ======");
-  buku.tampilkanInfo();
+//   print("====== buku perpustakaan ======");
+//   buku.tampilkanInfo();
 
-  buku.pinjam();
-  buku.tampilkanInfo();
+//   buku.pinjam();
+//   buku.tampilkanInfo();
 
-  buku.kembalikan();
-  buku.tampilkanInfo();
-}
+//   buku.kembalikan();
+//   buku.tampilkanInfo();
+// }
 
 // ----------------------------------- miniProject 2 -------------------------------------------
 
@@ -67,3 +67,63 @@ void main() {
 //     }
 //   }
 // }
+
+
+// ----------------------------------- miniProject 4 -------------------------------------------
+
+// import 'miniProject4/penumpang.dart';
+// import 'miniProject4/krl.dart';
+// import 'miniProject4/lrt.dart';
+// import 'miniProject4/mrt.dart';
+
+// void main() {
+//   List<Penumpang> penumpang = [
+//     KRL.manggaraiBogor("budi"),
+//     KRL.manggaraiBekasi("wawan"),
+//     KRL.manggaraiJakartaKota("joko"),
+//     LRT("andi", "Manggarai - Dukuh Atas"),
+//     LRT("sinta", "Manggarai - Velodrome"),
+//     MRT("sinti", "Lebak Bulus - Bundaran HI"),
+//   ];
+
+//   for (var p in penumpang) {
+//     if (p is KRL) {
+//       p.cetakTiket();
+//     } else if (p is LRT) {
+//       p.cetakTiket();
+//     } else if (p is MRT) {
+//       p.cetakTiket();
+//     }
+//   }
+// }
+// ----------------------------------- miniProject 5 -------------------------------------------
+
+import 'miniProject5/laptop.dart';
+import 'miniProject5/pc_gaming.dart';
+import 'miniProject5/pc_office.dart';
+
+void main() {
+
+  List produk = [
+    Laptop("ASUS ROG", 20000000, 5),
+    PCGaming("PC Gaming RTX 5000", 25000000, 3),
+    PCOffice("PC Office i7", 8000000, 10),
+  ];
+
+  for (var p in produk) {
+
+    if (p is Laptop) {
+      p.cetakProduk();
+    }
+
+    else if (p is PCGaming) {
+      p.cetakProduk();
+    }
+
+    else if (p is PCOffice) {
+      p.cetakProduk();
+    }
+
+  }
+
+}
